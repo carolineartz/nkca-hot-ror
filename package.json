@@ -1,0 +1,48 @@
+{
+  "name": "react-webpack-rails-tutorial",
+  "version": "2.0.0",
+  "description": "ShakaCode's example of React on Rails plus React Native",
+  "main": "server-express.js",
+  "engines": {
+    "node": "7.2.0",
+    "npm": "4.0.2"
+  },
+  "scripts": {
+    "postinstall": "cd client && npm install",
+    "test": "rspec && npm run test:client && npm run lint",
+    "test:client": "(cd client && npm run test --silent)",
+    "lint": "(cd client && npm run lint --silent)",
+    "build:clean": "rm app/assets/webpack/*",
+    "build:production": "(cd client && npm run build:production --silent)",
+    "build:production:client": "(cd client && npm run build:production:client --silent)",
+    "build:production:server": "(cd client && npm run build:production:server --silent)",
+    "build:client": "(cd client && npm run build:client --silent)",
+    "build:server": "(cd client && npm run build:server --silent)",
+    "build:dev:client": "(cd client && npm run build:dev:client --silent)",
+    "build:dev:server": "(cd client && npm run build:dev:server --silent)",
+    "hot-assets": "(cd client && npm run hot-assets)",
+    "start": "(cd client && npm run start --silent)"
+  },
+  "repository": {
+    "url": "https://github.com/shakacode/react-webpack-rails-tutorial.git",
+    "type": "git"
+  },
+  "keywords": [
+    "react",
+    "tutorial",
+    "comment",
+    "example"
+  ],
+  "author": "justin808",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shakacode/react-webpack-rails-tutorial/issues"
+  },
+  "homepage": "https://github.com/shakacode/react-webpack-rails-tutorial",
+  "dependencies": {},
+  "devDependencies": {},
+  "cacheDirectories": [
+    "node_modules",
+    "client/node_modules"
+  ]
+}

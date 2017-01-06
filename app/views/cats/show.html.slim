@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @cat.name
+p
+  strong Favorite thing:
+  = @cat.favorite_thing
+p
+  strong Color:
+  = @cat.color
+
+= link_to 'Edit', edit_cat_path(@cat)
+'|
+= link_to 'Back', cats_path

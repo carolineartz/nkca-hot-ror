@@ -1,0 +1,18 @@
+= form_for @cat do |f|
+  - if @cat.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@cat.errors.count, "error")} prohibited this cat from being saved:"
+      ul
+        - @cat.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :favorite_thing
+    = f.text_field :favorite_thing
+  .field
+    = f.label :color
+    = f.text_field :color
+  .actions = f.submit
