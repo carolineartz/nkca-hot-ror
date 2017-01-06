@@ -91,6 +91,7 @@
     "babel-eslint": "^7.1.1",
     "babel-plugin-react-transform": "^2.0.2",
     "body-parser": "^1.15.2",
+    "bootstrap-sass": "^3.3.7",
     "chai": "^3.5.0",
     "chai-immutable": "^1.6.0",
     "eslint": "^3.10.2",
